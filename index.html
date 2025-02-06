@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
     <style>
+
         body {
             display: flex;
             justify-content: center;
@@ -13,27 +14,50 @@
             background-color: #f4f4f4;
         }
         .profile-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            width: 300px;
-        }
-        .profile-card img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border: 3px solid red;
-            border-radius: 50%;
-        }
-        .social-links a {
-            margin: 0 5px;
-            text-decoration: none;
-        }
-        #utcTime{
-            color: red;
-        }
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    width: 300px;
+}
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    border-radius: 50%;
+}
+h1{
+    border: 3px solid #007bff;
+    color: #007bff;
+}
+h2 {
+    font-size: 1.5rem;
+}
+h3 {
+    font-size: 1.2rem;
+    color: #555;
+}
+p {
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+.social-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+#utcTime {
+    color: #007bff;
+    font-weight: bold;
+}
+
     </style>
 </head>
 <body>
@@ -41,6 +65,7 @@
         <img src="./Assets/473372911_1301819234357997_711947191291101088_n.jpg" alt="chiagozie mbanusi lawrence" data-testid="profilePicture">
         <h2 data-testid="fullName">Chiagozie Mbanusi Lawrence</h2>
         <h4 data-testid="jobTitle">Frontend Developer</h4>
+        <h1>Short Bio</h1>
         <p data-testid="shortBio">Passionate about creating interactive and responsive web applications. Always eager to learn new technologies.</p>
         <p data-testid="currentLocation">Lagos, Nigeria</p>
         <p>Email: <span data-testid="emailAddress">chiagozielawrence@gmail.com</span></p>
